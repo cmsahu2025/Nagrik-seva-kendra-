@@ -1,188 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nagrik Seva Kendra - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #0072ff, #00c6ff);
-      color: white;
-      line-height: 1.6;
-    }
-    header {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-      max-width: 1400px;
-      margin: auto;
-    }
-    .service-box {
-      background: white;
-      color: #333;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .service-box:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 6px 25px rgba(0,0,0,0.25);
-    }
-    .service-box img {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-      margin-bottom: 15px;
-    }
-    .service-box h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background-color: #004e8a;
-      color: #ccc;
-    }
-
-    @media(max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      .service-box img {
-        width: 60px;
-        height: 60px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>🧾 Nagrik Seva Kendra</h1>
-    <p>All Government Services at One Place – Simple, Fast, Reliable</p>
-  </header>
-
-  <section class="services">
-    <!-- 27 सेवाएं -->
+<section style="background: linear-gradient(135deg, #007bff, #00c6ff); padding: 60px 20px;">
+  <div style="text-align: center; color: white; margin-bottom: 40px;">
+    <h2 style="font-size: 36px; font-weight: bold;">Our Government Services</h2>
+    <p style="font-size: 18px;">Get access to 27 essential government services quickly and easily</p>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px; max-width: 1200px; margin: auto;">
+    
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/aadhaar.png" alt="Aadhaar">
-      <h3>Aadhaar Services</h3>
+      <img src="https://img.icons8.com/fluency/96/fingerprint-scan.png" alt="Aadhaar">
+      <h3>Aadhaar</h3>
     </div>
+    
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/pan-card.png" alt="PAN">
+      <img src="https://img.icons8.com/fluency/96/identification-documents.png" alt="PAN Card">
       <h3>PAN Card</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/ballot-box.png" alt="Voter ID">
+      <img src="https://img.icons8.com/fluency/96/ballot.png" alt="Voter ID">
       <h3>Voter ID</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/passport.png" alt="Passport">
+      <img src="https://img.icons8.com/fluency/96/passport.png" alt="Passport">
       <h3>Passport</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/shopping-basket.png" alt="Ration Card">
+      <img src="https://img.icons8.com/color/96/ration-card.png" alt="Ration Card">
       <h3>Ration Card</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/car-license.png" alt="Driving License">
+      <img src="https://img.icons8.com/color/96/driver-license.png" alt="Driving License">
       <h3>Driving License</h3>
     </div>
 
-    <!-- अन्य 21 सेवाएं भी ऐसे ही जोड़ी जाएंगी (नीचे एक बार में जोड़ दूंगा) -->
-
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/baby.png" alt="Birth Certificate">
+      <img src="https://img.icons8.com/fluency/96/baby.png" alt="Birth Certificate">
       <h3>Birth Certificate</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/cemetery.png" alt="Death Certificate">
+      <img src="https://img.icons8.com/fluency/96/headstone.png" alt="Death Certificate">
       <h3>Death Certificate</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/income.png" alt="Income Certificate">
+      <img src="https://img.icons8.com/fluency/96/money-bag-euro.png" alt="Income Certificate">
       <h3>Income Certificate</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/family.png" alt="Caste Certificate">
+      <img src="https://img.icons8.com/fluency/96/group-background-selected.png" alt="Caste Certificate">
       <h3>Caste Certificate</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/home.png" alt="Domicile">
+      <img src="https://img.icons8.com/color/96/cottage.png" alt="Domicile Certificate">
       <h3>Domicile Certificate</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/worker-male.png" alt="eShram">
+      <img src="https://img.icons8.com/fluency/96/worker-male.png" alt="e-Shram">
       <h3>e-Shram Card</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/medical-doctor.png" alt="ABHA">
+      <img src="https://img.icons8.com/color/96/health-checkup.png" alt="ABHA Health ID">
       <h3>ABHA Health ID</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/retirement.png" alt="EPFO">
+      <img src="https://img.icons8.com/color/96/employee-card.png" alt="EPFO">
       <h3>EPFO / UAN</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/baby-bottle.png" alt="Matritva Yojana">
-      <h3>Matritva Vandana Yojana</h3>
+      <img src="https://img.icons8.com/color/96/pregnant.png" alt="Matritva Yojana">
+      <h3>Matritva Yojana</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/pdf.png" alt="PDF Tools">
+      <img src="https://img.icons8.com/color/96/export-pdf.png" alt="PDF Tools">
       <h3>PDF Tools</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/link.png" alt="Aadhaar Link">
+      <img src="https://img.icons8.com/color/96/link.png" alt="Aadhaar Linking">
       <h3>Aadhaar Linking</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/credit-card.png" alt="Fastag">
+      <img src="https://img.icons8.com/color/96/car.png" alt="FASTag">
       <h3>FASTag</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/hospital-room.png" alt="Ayushman">
+      <img src="https://img.icons8.com/color/96/medical-doctor.png" alt="Ayushman Card">
       <h3>Ayushman Card</h3>
     </div>
+
     <div class="service-box">
       <img src="https://img.icons8.com/color/96/money.png" alt="NPS">
       <h3>NPS Services</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/question-mark.png" alt="Other">
+      <img src="https://img.icons8.com/color/96/services.png" alt="Other">
       <h3>Other Services</h3>
     </div>
 
-  </section>
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 Nagrik Seva Kendra. All rights reserved.
-  </footer>
-
-</body>
-</html>
+<style>
+.service-box {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.service-box img {
+  max-width: 80px;
+  margin-bottom: 15px;
+}
+.service-box h3 {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .service-box h3 {
+    font-size: 14px;
+  }
+}
+</style>
