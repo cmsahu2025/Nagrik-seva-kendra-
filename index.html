@@ -1,170 +1,215 @@
-<section style="background: linear-gradient(135deg, #007bff, #00c6ff); padding: 60px 20px;">
-  <div style="text-align: center; color: white; margin-bottom: 40px;">
-    <h2 style="font-size: 36px; font-weight: bold;">Our Government Services</h2>
-    <p style="font-size: 18px;">Get access to 27 essential government services quickly and easily</p>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Government Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+    }
+    .services-section {
+      padding: 50px 20px;
+      color: white;
+      text-align: center;
+    }
+    .services-section h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .services-section p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .service-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+    .service-box img {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 10px;
+    }
+    .service-box h3 {
+      font-size: 16px;
+      color: #333;
+      margin: 0;
+    }
 
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="services-section">
+  <h2>Our Government Services</h2>
+  <p>Access 27 Essential Services at Your Fingertips</p>
   <div class="services-grid">
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/fingerprint-scan.png" alt="Aadhaar">
+      <img src="https://img.icons8.com/fluency/96/fingerprint-scan.png" alt="Aadhaar">
       <h3>Aadhaar</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/identification-documents.png" alt="PAN Card">
+      <img src="https://img.icons8.com/fluency/96/identification-documents.png" alt="PAN Card">
       <h3>PAN Card</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/ballot.png" alt="Voter ID">
+      <img src="https://img.icons8.com/fluency/96/ballot.png" alt="Voter ID">
       <h3>Voter ID</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/passport.png" alt="Passport">
+      <img src="https://img.icons8.com/fluency/96/passport.png" alt="Passport">
       <h3>Passport</h3>
     </div>
+
     <div class="service-box">
       <img src="https://img.icons8.com/color/96/meal-card.png" alt="Ration Card">
       <h3>Ration Card</h3>
     </div>
+
     <div class="service-box">
       <img src="https://img.icons8.com/color/96/driver-license.png" alt="Driving License">
       <h3>Driving License</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/baby.png" alt="Birth Certificate">
+      <img src="https://img.icons8.com/fluency/96/baby.png" alt="Birth Certificate">
       <h3>Birth Certificate</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/skull.png" alt="Death Certificate">
+      <img src="https://img.icons8.com/fluency/96/headstone.png" alt="Death Certificate">
       <h3>Death Certificate</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/money-bag.png" alt="Income Certificate">
+      <img src="https://img.icons8.com/fluency/96/money-bag-euro.png" alt="Income Certificate">
       <h3>Income Certificate</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/conference-background-selected.png" alt="Caste Certificate">
+      <img src="https://img.icons8.com/fluency/96/group-background-selected.png" alt="Caste Certificate">
       <h3>Caste Certificate</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/city.png" alt="Domicile Certificate">
+      <img src="https://img.icons8.com/color/96/cottage.png" alt="Domicile Certificate">
       <h3>Domicile Certificate</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/worker-male.png" alt="e-Shram Card">
+      <img src="https://img.icons8.com/fluency/96/worker-male.png" alt="e-Shram Card">
       <h3>e-Shram Card</h3>
     </div>
+
     <div class="service-box">
       <img src="https://img.icons8.com/color/96/health-checkup.png" alt="ABHA Health ID">
       <h3>ABHA Health ID</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/employee-card.png" alt="EPFO / UAN">
+      <img src="https://img.icons8.com/color/96/employee-card.png" alt="EPFO">
       <h3>EPFO / UAN</h3>
     </div>
+
     <div class="service-box">
       <img src="https://img.icons8.com/color/96/pregnant.png" alt="Matritva Yojana">
       <h3>Matritva Yojana</h3>
     </div>
+
     <div class="service-box">
       <img src="https://img.icons8.com/color/96/export-pdf.png" alt="PDF Tools">
       <h3>PDF Tools</h3>
     </div>
+
     <div class="service-box">
       <img src="https://img.icons8.com/color/96/link.png" alt="Aadhaar Linking">
       <h3>Aadhaar Linking</h3>
     </div>
-    <div class="service-box">
-      <img src="https://img.icons8.com/color/96/smart-card-chip.png" alt="PVC Aadhaar">
-      <h3>PVC Aadhaar</h3>
-    </div>
-    <div class="service-box">
-      <img src="https://img.icons8.com/color/96/downloads.png" alt="Aadhaar Download">
-      <h3>Aadhaar Download</h3>
-    </div>
+
     <div class="service-box">
       <img src="https://img.icons8.com/color/96/car.png" alt="FASTag">
       <h3>FASTag</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/hospital-room.png" alt="Ayushman Card">
+      <img src="https://img.icons8.com/color/96/medical-doctor.png" alt="Ayushman Card">
       <h3>Ayushman Card</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/investment.png" alt="NPS">
+      <img src="https://img.icons8.com/color/96/money.png" alt="NPS Services">
       <h3>NPS Services</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/tax.png" alt="ITR Filing">
-      <h3>ITR Filing</h3>
+      <img src="https://img.icons8.com/color/96/checked-radio-button.png" alt="Mobile Number Update">
+      <h3>Mobile Number Update</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/university.png" alt="Scholarship">
-      <h3>Scholarship</h3>
+      <img src="https://img.icons8.com/color/96/approve-and-update.png" alt="Aadhaar Status">
+      <h3>Aadhaar Status</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/privacy-policy.png" alt="Mobile Number Update">
-      <h3>Mobile Update</h3>
+      <img src="https://img.icons8.com/color/96/gender-equality.png" alt="EWS Certificate">
+      <h3>EWS Certificate</h3>
     </div>
+
     <div class="service-box">
-      <img src="https://img.icons8.com/color/96/google-forms.png" alt="Form Downloads">
-      <h3>Form Download</h3>
+      <img src="https://img.icons8.com/color/96/school.png" alt="Student Scholarship">
+      <h3>Scholarship Form</h3>
     </div>
+
+    <div class="service-box">
+      <img src="https://img.icons8.com/color/96/tax.png" alt="Income Tax">
+      <h3>Income Tax</h3>
+    </div>
+
+    <div class="service-box">
+      <img src="https://img.icons8.com/color/96/survey.png" alt="PM Yojana">
+      <h3>PM Yojana</h3>
+    </div>
+
     <div class="service-box">
       <img src="https://img.icons8.com/color/96/services.png" alt="Other Services">
       <h3>Other Services</h3>
     </div>
+
   </div>
 </section>
 
-<style>
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    max-width: 1300px;
-    margin: auto;
-  }
-
-  .service-box {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .service-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  }
-
-  .service-box img {
-    max-width: 70px;
-    margin-bottom: 15px;
-  }
-
-  .service-box h3 {
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
-  }
-
-  @media (max-width: 768px) {
-    .services-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .service-box img {
-      max-width: 60px;
-    }
-    .service-box h3 {
-      font-size: 14px;
-    }
-  }
-
-  @media (min-width: 1025px) {
-    .services-grid {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-</style>
+</body>
+</html>
